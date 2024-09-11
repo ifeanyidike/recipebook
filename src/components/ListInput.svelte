@@ -31,12 +31,12 @@
         <button
           type="button"
           on:click={() => removeItem(index)}
-          class="ml-2 bg-red-500 hover:bg-red-700"
+          class="ml-2 p-3 rounded bg-red-500 hover:bg-red-700"
         >
           <svg
             class="w-3 h-3"
             fill="none"
-            stroke="currentColor"
+            stroke="white"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

@@ -82,7 +82,8 @@
 
     return async ({ update }) => {
         const updates = await update();
-        console.log("updates", updates)
+        ingredients = []
+        instructions = []
         uploadStatus = 'completed';
     };
 }}>
