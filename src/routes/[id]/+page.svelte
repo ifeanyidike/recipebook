@@ -22,9 +22,9 @@
 
                 <div class="border-t border-gray-300 mt-8 pt-6">
                     <h2 class="text-4xl font-semibold text-gray-900 mb-4">Ingredients</h2>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 flex flex-col gap-2">
                         {#each data.recipe.ingredients as ingredientData}
-                          <li class="flex gap-2 text-gray-800 leading-relaxed">
+                          <li class="flex text-gray-800 leading-relaxed">
                             <svg
                               class="w-5 h-5 mr-3 text-blue-500 flex-shrink-0"
                               fill="none"
@@ -47,7 +47,7 @@
 
                 <div class="border-t border-gray-300 mt-8 pt-6">
                     <h2 class="text-4xl font-semibold text-gray-900 mb-4">Instructions</h2>
-                    <ul>
+                    <ul class="flex flex-col gap-2">
                         {#each data.recipe.instructions as instructionData}
                         <li class="flex text-gray-700 leading-relaxed">
                             <svg
