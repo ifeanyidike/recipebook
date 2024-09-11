@@ -6,7 +6,7 @@
 </script>
 
 <div class="recipes-list container mx-auto py-12 px-4">
-    <h1 class="text-5xl font-extrabold text-center text-gray-900 mb-12 text-red-500">All Recipes</h1>
+    <h1 class="text-5xl font-extrabold text-center text-gray-900 mb-12">All Recipes</h1>
 
     {#if data.recipes.length === 0}
         <p class="text-center text-gray-600 text-lg">No recipes found.</p>

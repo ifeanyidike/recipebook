@@ -22,11 +22,11 @@
 
                 <div class="border-t border-gray-300 mt-8 pt-6">
                     <h2 class="text-4xl font-semibold text-gray-900 mb-4">Ingredients</h2>
-                    <ul>
+                    <ul class="space-y-2">
                         {#each data.recipe.ingredients as ingredientData}
-                        <li class="flex items-center text-gray-700 leading-relaxed">
+                          <li class="flex items-center text-gray-800 leading-relaxed">
                             <svg
-                              class="w-5 h-5 mr-2 text-blue-500"
+                              class="w-5 h-5 mr-3 text-blue-500 flex-shrink-0"
                               fill="none"
                               stroke="currentColor"
                               stroke-width="2"
@@ -38,10 +38,11 @@
                                 d="M5 13l4 4L19 7"
                               ></path>
                             </svg>
-                            <span>{ingredientData.ingredient}</span>
+                            <span class="text-base">{ingredientData.ingredient}</span>
                           </li>
                         {/each}
-                    </ul> 
+                      </ul>
+                      
                 </div>
 
                 <div class="border-t border-gray-300 mt-8 pt-6">
