@@ -4,8 +4,10 @@ import Recipe from "$lib/recipe";
 
 export async function load() {
     const recipeDb = new Recipe()
+    
     try {
         const recipes = await recipeDb.getAll()
+        console.log("recipes", recipes)
         return { recipes, headers: {
             "Cache-Control": "no-store",
           }, }; 

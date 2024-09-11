@@ -81,7 +81,7 @@
     uploadStatus = 'uploading';
 
     return async ({ update }) => {
-        const updates = await update();
+        await update();
         ingredients = []
         instructions = []
         imagePreview = ""
