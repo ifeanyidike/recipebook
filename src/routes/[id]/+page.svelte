@@ -24,7 +24,7 @@
                     <h2 class="text-4xl font-semibold text-gray-900 mb-4">Ingredients</h2>
                     <ul class="space-y-2">
                         {#each data.recipe.ingredients as ingredientData}
-                          <li class="flex items-center text-gray-800 leading-relaxed">
+                          <li class="flex gap-2 text-gray-800 leading-relaxed">
                             <svg
                               class="w-5 h-5 mr-3 text-blue-500 flex-shrink-0"
                               fill="none"

@@ -21,7 +21,7 @@
                 </div>
                 <div class="p-4">
                     <h2 class="text-2xl font-bold text-gray-900 mb-2">{recipe.title}</h2>
-                    <p class="text-gray-700 mb-4">{recipe.description}</p>
+                    <p class="text-gray-700 mb-4 line-clamp-5">{recipe.description}</p>
                     <button class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">View Recipe</button>
                 </div>
             </a>
