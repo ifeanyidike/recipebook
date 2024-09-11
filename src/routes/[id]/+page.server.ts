@@ -10,5 +10,8 @@ export async function load({ params }: any) {
         return error(404);
     }
 
-    return { recipe }; 
+    return { recipe, 
+        headers: {
+        "Cache-Control": "no-store",
+      }, }; 
 }

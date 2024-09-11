@@ -6,7 +6,9 @@ export async function load() {
     const recipeDb = new Recipe()
     try {
         const recipes = await recipeDb.getAll()
-        return { recipes }; 
+        return { recipes, headers: {
+            "Cache-Control": "no-store",
+          }, }; 
     } catch (error: any) {
         return fail(501, error.message)
     }    
