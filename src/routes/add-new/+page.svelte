@@ -1,6 +1,10 @@
 <script lang='ts'>
 	import { enhance } from '$app/forms';
 	import ListInput from '../../components/ListInput.svelte';
+	import type { Recipe } from '../../types';
+    export let data: { recipes: Recipe[] };
+
+    console.log("data", data)
     let title: string = '';
     let description: string = '';
     let ingredients: string[] = [];

@@ -34,6 +34,9 @@ export const actions = {
                 ingredients,
                 instructions
             })
+            const recipes = await recipeDb.getAll();
+            return {recipes}
+
         } catch (error: any) {
             console.log("error", error)
             fail(501, error.message)
