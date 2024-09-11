@@ -38,7 +38,7 @@
                                 d="M5 13l4 4L19 7"
                               ></path>
                             </svg>
-                            <span class="text-base">{ingredientData.ingredient}</span>
+                            <span class="text-base w-[98%]">{ingredientData.ingredient}</span>
                           </li>
                         {/each}
                       </ul>
@@ -63,7 +63,7 @@
                                 d="M5 13l4 4L19 7"
                               ></path>
                             </svg>
-                            <span>{instructionData.instruction}</span>
+                            <span class="w-[98%] text-base">{instructionData.instruction}</span>
                           </li>
                         {/each}
                     </ul> 
