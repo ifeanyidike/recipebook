@@ -49,7 +49,7 @@
                     <h2 class="text-4xl font-semibold text-gray-900 mb-4">Instructions</h2>
                     <ul>
                         {#each data.recipe.instructions as instructionData}
-                        <li class="flex items-center text-gray-700 leading-relaxed">
+                        <li class="flex text-gray-700 leading-relaxed">
                             <svg
                               class="w-5 h-5 mr-2 text-blue-500"
                               fill="none"
