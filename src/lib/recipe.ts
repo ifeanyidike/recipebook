@@ -32,6 +32,9 @@ export default class Recipe extends Utility {
                 include: {
                     ingredients: true,
                     instructions: true
+                },
+                orderBy: {
+                    createdAt: "desc"
                 }
             })
         })
