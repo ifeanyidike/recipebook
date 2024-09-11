@@ -84,6 +84,7 @@
         const updates = await update();
         ingredients = []
         instructions = []
+        imagePreview = ""
         uploadStatus = 'completed';
     };
 }}>
