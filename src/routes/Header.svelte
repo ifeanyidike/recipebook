@@ -15,7 +15,7 @@
 				<a href="/">Home</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/add-new' ? 'page' : undefined}>
-				<a href="/add-new">Add new recipe</a>
+				<a href="/add-new" data-sveltekit-preload-data>Add new recipe</a>
 			</li>
 			
 		</ul>
