@@ -28,20 +28,16 @@ export default class Recipe extends Utility {
 
     public async getAll(){
         return this.process(async() => {
-            return await this.db.recipe.findMany({
-                include: {
-                    ingredients: true,
-                    instructions: true
-                },
+            const data =  await this.db.recipe.findMany({
                 orderBy: {
                     createdAt: "desc"
                 }
             })
+            return data
         })
     }
 
     public async getOne(id: number){
-        console.log("id", id)
         return this.process(async() => {
             return await this.db.recipe.findFirst({
                 where: { id },
