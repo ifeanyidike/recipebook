@@ -10,12 +10,5 @@ export async function load({ params }: any) {
         return error(404);
     }
 
-    return { recipe, 
-        headers: {
-            "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
-            "Pragma": "no-cache",
-            "Expires": "0",
-            "Surrogate-Control": "no-store",
-          },
-     }; 
+    return { recipe }; 
 }

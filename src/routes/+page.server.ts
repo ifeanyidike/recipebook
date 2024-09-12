@@ -8,14 +8,7 @@ export async function load() {
     try {
         const recipes = await recipeDb.getAll()
         console.log("recipes", recipes)
-        return { recipes, 
-            headers: {
-                "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
-                "Pragma": "no-cache",
-                "Expires": "0",
-                "Surrogate-Control": "no-store",
-              },
-        }; 
+        return { recipes}; 
     } catch (error: any) {
         return fail(501, error.message)
     }    
